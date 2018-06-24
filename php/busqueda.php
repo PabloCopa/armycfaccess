@@ -2,7 +2,7 @@
 
 include "conexion.php";
 
-$user_id=null;
+$id_personas=null;
 $sql1= "select * from personas where nombre like '%$_GET[s]%' or apellido like '%$_GET[s]%' or apto_fisico like '%$_GET[s]%' or email like '%$_GET[s]%' or telefono like '%$_GET[s]%' ";
 $query = $con->query($sql1);
 ?>
