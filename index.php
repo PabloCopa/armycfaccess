@@ -29,6 +29,20 @@
       </div>
 </nav>
 
+<login>
+    <div>
+	<center>
+		<form method="POST" action="validar.php">
+			<input type="text" name="nnombre" placeholder="Usuario" />
+			<br />
+			<input type="password" name="npassword" placeholder="Contraseña" />
+			<br />
+			<button type="submit">Inicar Sesion</button>
+		</form>
+	</center>
+</div>
+</login>
+
 <?php
   //echo 'This is Index Page';
 
