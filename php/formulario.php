@@ -4,17 +4,17 @@ include "conexion.php";
 $id_personas=null;
 $sql1= "select * from personas where id_personas = ".$_GET["id_personas"];
 $query = $con->query($sql1);
-$person = null;
+$personas = null;
 if($query->num_rows>0){
 while ($r=$query->fetch_object()){
-  $person=$r;
+  $personas=$r;
   break;
 }
 
   }
 ?>
 
-<?php if($person!=null):?>
+<?php if($personas!=null):?>
 
 <form role="form" method="post" action="php/actualizar.php">
   <div class="form-group">
