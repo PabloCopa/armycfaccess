@@ -7,7 +7,7 @@ page_protect();
 <html lang="en">
 <head>
 
-    <title>Facturacionweb.site</title>
+    <title>REGISTROS DEL MES</title>
     <link rel="stylesheet" href="../../neon/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/animation.css"  id="style-resource-3">
@@ -202,7 +202,7 @@ page_protect();
     <script src="../../neon/js/neon-demo.js" id="script-resource-10"></script>
 
     <script src="../../neon/js/bootstrap-datepicker.js" id="script-resource-11"></script>
-
+        </div>
     </body>
 </html>
 

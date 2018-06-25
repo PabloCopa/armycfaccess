@@ -1,10 +1,11 @@
 <?php
-$host     = "localhost"; // Host name 
-$username = "root"; // Mysql username 
-$password = ""; // Mysql password 
-$db_name  = "dbgym"; // Database name 
+$host     = "ec2-54-163-229-212.compute-1.amazonaws.com"; // Host name 
+$username = "lwnwsibmeluecn"; // Mysql username 
+$password = "fbd10d0e0bf159244e530cecc56b3260864a4cabbb0a09d0b9ad00dae1b2917f"; // Mysql password 
+$db_name  = "db1dtmnbmah579";
+$port     = "5432";// Database name 
 // Connect to server and select databse.
-$con      = mysqli_connect($host, $username, $password, $db_name);
+$con      = mysqli_connect($host, $username, $password, $db_name, $port);
 
 // Check connection
 if (mysqli_connect_errno($con)) {
@@ -37,7 +38,7 @@ function page_protect()
     } else {
     }
     $a = $_SESSION['auth_level'];
-    if (strpos($a, '4') !== false) {
+    if (strpos($a, '5') !== false) {
     } else {
         header("Location: ../../login/");
     }

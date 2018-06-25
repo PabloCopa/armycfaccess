@@ -1,4 +1,4 @@
-﻿
+		
 
 <?php
 require 'db_conn.php';
@@ -10,7 +10,7 @@ page_protect();
 <html lang="en">
 <head>
 
-    <title>Facturacionweb.site</title>
+    <title>LECTURAS DE REGISTROS</title>
     <link rel="stylesheet" href="../../neon/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/animation.css"  id="style-resource-3">
@@ -265,7 +265,62 @@ page_protect();
 					?>							
 				</tbody>
 		</table>
+Health Status of : -  <?php
+				$id     = $_POST['name'];
+				$query  = "select * from user_data WHERE newid='$id'";
+				//echo $query;
+				$result = mysqli_query($con, $query);
 
+				if (mysqli_affected_rows($con) != 0) {
+				    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+				        $name = $row['name'];
+				        echo $name;
+				    }
+				}
+				?>
+		<table class="table table-bordered datatable" id="table-1">
+			<thead>
+				<tr>
+				<th>#</th>
+					<th>Body Fat</th>
+					<th>Water</th>
+					<th>Muscle</th>
+					<th>Calorie</th>
+					<th>Bone</th>
+					<th>Remarks</th>
+				
+				
+				</tr>
+			</thead>
+				<tbody>
+					<?php
+					$memid  = $_POST['name'];
+						$query  = "select * from healthstatus as health join user_data as users on users.id=health.id";
+						//echo $query;
+						$result = mysqli_query($con, $query);
+						$sno    = 1;
+
+						if (mysqli_affected_rows($con) != 0) {
+						    while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+						        $msgid = $row['hs_id'];
+						        echo "<td>" . $sno . "</td>";
+						        echo "<td>" . $row['bodyfat'] . "</td>";
+						        echo "<td>" . $row['water'] . "</td>";
+						        echo "<td>" . $row['muscle'] . "</td>";
+						        echo "<td>" . $row['calorie'] . "</td>";
+						        echo "<td>" . $row['bone'] . "</td>";
+						        echo "<td>" . $row['remarks'] . "</td>";
+						        
+						        $sno++;
+						        
+						        $msgid = 0;
+						    }
+						    
+						}
+
+					?>							
+				</tbody>
+		</table>
 
 
 			<?php include('footer.php'); ?>
@@ -290,6 +345,7 @@ var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
 var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
 var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2");
     </script>
+        </div>
     </body>
 </html>
 

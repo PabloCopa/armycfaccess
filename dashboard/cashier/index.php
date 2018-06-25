@@ -7,7 +7,7 @@ page_protect();
 <head> 
 
     
-    <title>Facturacionweb.site | Dashboard </title>
+    <title>ARMY CF ACCESS </title>
 
     <link rel="stylesheet" href="../../neon/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
@@ -35,7 +35,7 @@ page_protect();
 			
 			<!-- logo -->
 			<div class="logo">
-				<a href="main.php">
+				<a href="index.php">
 					<img src="../../img/logo.png" alt="" width="192" height="80" />
 				</a>
 			</div>
@@ -96,8 +96,8 @@ page_protect();
 				<div class="tile-stats tile-red">
 					<div class="icon"><i class="entypo-users"></i></div>
 						<div class="num" data-postfix="" data-duration="1500" data-delay="0">
-						<h2>Paid Income This Month</h2><br>	
-						PHP 
+						<h2>Ingresos Pagados x Mes</h2><br>	
+						$ 
 						<?php
 							$date  = date('Y-m');
 							$query = "select * from subsciption WHERE  paid_date LIKE '$date%'";
@@ -121,7 +121,7 @@ page_protect();
 				<div class="tile-stats tile-green">
 					<div class="icon"><i class="entypo-chart-bar"></i></div>
 						<div class="num" data-postfix="" data-duration="1500" data-delay="0">
-						<h2>Total <br>Members</h2><br>	
+						<h2>Total <br>Miembros</h2><br>	
 							<?php
 							$date  = date('Y-m');
 							$query = "select COUNT(*) from user_data WHERE wait='no'";
@@ -144,7 +144,7 @@ page_protect();
 				<div class="tile-stats tile-aqua">
 					<div class="icon"><i class="entypo-mail"></i></div>
 						<div class="num" data-postfix="" data-duration="1500" data-delay="0">
-						<h2>Joined This Month</h2><br>	
+						<h2>Inscritos este Mes</h2><br>	
 							<?php
 							$date  = date('Y-m');
 							$query = "select COUNT(*) from user_data WHERE wait='no'";
@@ -167,8 +167,8 @@ page_protect();
 				<div class="tile-stats tile-blue">
 					<div class="icon"><i class="entypo-rss"></i></div>
 						<div class="num" data-postfix="" data-duration="1500" data-delay="0">
-						<h2>Income This Month</h2><br>	
-							PHP <?php
+						<h2>Ingresos este Mes</h2><br>	
+							$ <?php
 							$date  = date('Y-m');
 							$query = "select * from subsciption WHERE  paid_date LIKE '$date%'";
 
@@ -202,5 +202,6 @@ page_protect();
     <script src="../../neon/js/neon-login.js" id="script-resource-8"></script>
     <script src="../../neon/js/neon-custom.js" id="script-resource-9"></script>
     <script src="../../neon/js/neon-demo.js" id="script-resource-10"></script>
+        </div>
     </body>
 </html>

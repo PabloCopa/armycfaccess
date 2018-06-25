@@ -7,7 +7,7 @@ page_protect();
 <html lang="en">
 <head>
 
-    <title>Facturacionweb.site</title>
+    <title>RENOVAR</title>
     <link rel="stylesheet" href="../../neon/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/animation.css"  id="style-resource-3">
@@ -162,7 +162,7 @@ page_protect();
 
 		<hr / >
 
-		<form action="over_month.php" enctype="multipart/form-data" method="POST" role="form" class="form-horizontal form-groups-bordered">
+		<form action="over_month.php" method="POST" class='form-horizontal form-bordered'>
 		
 			<div class="form-group">
 				<label for="field-1" class="col-sm-3 control-label">De :</label>					
@@ -186,8 +186,10 @@ page_protect();
 					</div>
 			</div>		
  
-</form>
-			<?php include('footer.php'); ?>
+		</form>
+
+		<?php include('footer.php'); ?>
+    	
     	</div>
 
 
@@ -211,5 +213,6 @@ page_protect();
 			var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
 			var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2");
     	</script>
+        </div>
     </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 include '../new_p_submit.php';
 ?><!doctype html>
-
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>Recibo</title>
@@ -15,7 +15,7 @@ include '../new_p_submit.php';
 			<address>
 				<p>World Hospital</p>
 				<p>101 E. Chapman Ave<br>Orange, CA 92866</p>
-				<p>(+51) 995530374</p>
+				<p>(800) 555-1234</p>
 			</address>
 			<span><img alt="" src="logo.png"></span>
 		</header>
@@ -27,7 +27,7 @@ include '../new_p_submit.php';
 				</tr>
 				<tr>
 					<th><span  >Fecha</span></th>
-					<td><span  >January 1, 2016</span></td>
+					<td><span  >January 1, 2012</span></td>
 				</tr>
 				<tr>
 					<th><span  >Amount Due</span></th>

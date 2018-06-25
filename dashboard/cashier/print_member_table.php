@@ -14,7 +14,7 @@ if (isset($_POST['name'])) {
 }
 ?>
 <!doctype html>
-
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>Recibo</title>
@@ -96,9 +96,9 @@ echo $mem_id;
 		<header>
 			<a href="table_view.php"><h1>Time Schedule (Re-Print Slip)</h1></a>
 			<address>
-				<p>Platea21 The Gym</p>
-				<p>M-21, Lane 2 ,Khalilullah Masjid</p><p>Tacna, Peru</p>
-				<p>Celular:-995530374</p><p>www.platea21.com (gorchor@gmail.com)</p><br><p><div id="barcodeTarget" class="barcodeTarget"></div>
+				<p>Galaxy The Gym</p>
+				<p>M-21, Lane 2 ,Khalilullah Masjid</p><p>Jamia Nagar Oklha New Delhi 110025</p>
+				<p>Mobile:-9873712786</p><p>www.galaxythegym.com (galaxythegym@gmail.com)</p><br><p><div id="barcodeTarget" class="barcodeTarget"></div>
     <canvas id="canvasTarget"></canvas> </span>
 			</address>
 			<span><img alt="" src="logo.png">
@@ -116,7 +116,7 @@ echo $date;
 					<th><span  >ID Miembro</span></th>
 					<td><?php
 echo $mem_id;
-?></span></td>
+?></td>
 				</tr>
 			</table>	
 <table class="meta">
@@ -152,6 +152,6 @@ echo $details;
 			
 		</article>
 		<center>
-<a href="table_view.php"><h1>Programar el tiempo de impresión de recibos</a></center></font></h1>
+            <a href="table_view.php"><h1>Time Sechdule Print Slip</h1></a></center>
 	</body>
 </html>

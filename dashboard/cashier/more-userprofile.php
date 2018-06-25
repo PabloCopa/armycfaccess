@@ -7,7 +7,7 @@ page_protect();
 <html lang="en">
 <head>
 
-    <title>Facturacionweb.site</title>
+    <title>USUARIOS ARMY</title>
     <link rel="stylesheet" href="../../neon/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/animation.css"  id="style-resource-3">
@@ -190,9 +190,9 @@ page_protect();
 			</div>
 								  
 			<div class="form-group">
-				<label for="field-1" class="col-sm-3 control-label">Contraseña</label>					
+				<label for="field-1" class="col-sm-3 control-label">Password</label>					
 					<div class="col-sm-5">
-						<p><span class="form-control">*********</span> <a href="change_pwd.php" class="btn">Cambiar Contraseña</a> <span class="help-block">*Por razones de seguridad</span></p>
+						<p><span class="form-control">*********</span> <a href="change_pwd.php" class="btn">Cambiar Contraseña</a> <span class="help-block">*For security reasons hidden</span></p>
 					</div>
 			</div>									
 
@@ -229,6 +229,7 @@ page_protect();
 		var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
 		var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2");
     </script>
+        </div>
     </body>
 </html>
 

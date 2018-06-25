@@ -349,7 +349,7 @@ if (isset($_POST['name'])) {
 				<div class="form-group">
 					<label for="field-1" class="col-sm-3 control-label">InscripcionFecha :</label>					
 						<div class="col-sm-5">
-							<input type="text" name="date" id="textfield22" class="form-control" value ='<?php echo $date; ?>' >
+							<input type="text" name="date" id="textfield22" class="form-control datepicker" value ='<?php echo $date; ?>' data-format="yyyy-m-d">
 						</div>
 				</div>	
 

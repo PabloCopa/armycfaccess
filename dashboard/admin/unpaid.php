@@ -266,5 +266,6 @@ var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
 var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
 var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2");
     </script>
+        </div>
     </body>
 </html>

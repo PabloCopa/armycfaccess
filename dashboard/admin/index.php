@@ -7,7 +7,7 @@ page_protect();
 <head> 
 
     
-    <title>Facturacionweb.site | GYM System </title>
+    <title>ARMY CF ACCESS </title>
 
     <link rel="stylesheet" href="../../neon/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
@@ -202,5 +202,6 @@ page_protect();
     <script src="../../neon/js/neon-login.js" id="script-resource-8"></script>
     <script src="../../neon/js/neon-custom.js" id="script-resource-9"></script>
     <script src="../../neon/js/neon-demo.js" id="script-resource-10"></script>
+        </div>
     </body>
 </html>

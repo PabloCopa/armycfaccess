@@ -7,7 +7,7 @@ page_protect();
 <html lang="en">
 <head>
 
-    <title>Facturacionweb.site</title>
+    <title>NUEVO PLAN</title>
     <link rel="stylesheet" href="../../neon/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/animation.css"  id="style-resource-3">
@@ -158,7 +158,7 @@ page_protect();
 					
 				</div>
 
-		<h2>New Plan Details</h2>
+		<h2>Detalles Nuevo Plan</h2>
 
 		<hr />
 
@@ -240,6 +240,7 @@ var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
 var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
 var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2");
     </script>
+        </div>
     </body>
 </html>
 

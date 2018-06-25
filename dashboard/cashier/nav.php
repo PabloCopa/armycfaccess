@@ -6,14 +6,16 @@
 				
 	<li><a href="payments.php"><i class="entypo-star"></i><span>Pagos</span></a></li>
 
-	<!--<li><a href="category.php"><i class="entypo-users"></i><span>Miembros</span></a>
+	<li><a href="category.php"><i class="entypo-users"></i><span>Miembros</span></a>
 		<ul>
 			<li class="active">
-				<a href="view_mem.php"><span>View Members</span></a></li>
+				<a href="view_mem.php"><span>Ver Miembros</span></a></li>
 
-			<li><a href="table_view.php"><span>View / Enter Schedule</span></a></li>
+			<li><a href="table_view.php"><span>Ver / Ingresar Horario</span></a></li>
 		</ul>
-	</li>	
+	</li>
+
+	<li><a href="new_health_status.php"><i class="entypo-user-add"></i><span>Estado de Salud</span></a> 	
 
 		<li><a href="#"><i class="entypo-quote"></i><span>Plan</span></a>
 
@@ -28,15 +30,19 @@
 
 		<ul>
 			<li class="active">
-				<a href="over_members_month.php"><span>Members per Month</span></a>
+				<a href="over_members_month.php"><span>Miembros por mes</span></a>
 			</li>
 
 			<li>
-				<a href="revenue_month.php"><span>Miembros por Año</span></a>
+				<a href="over_members_year.php"><span>Miembros por Año</span></a>
 			</li>
 
+			<li>
+				<a href="revenue_month.php"><span>Ingresos por mes</span></a>
+			</li>			
+
 		</ul>
--->
+
 	<li><a href="new_plan.php"><i class="entypo-alert"></i><span>Alertas</span></a>
 
 		<ul>
@@ -51,9 +57,9 @@
 		</ul>
 
 	</li>
-<!--
-	<li><a href="more-userprofile.php"><i class="entypo-folder"></i><span>Profile</span></a></li>
--->
+
+	<li><a href="more-userprofile.php"><i class="entypo-folder"></i><span>Perfil</span></a></li>
+
 	<li><a href="logout.php"><i class="entypo-logout"></i><span>Cerrar Sesión</span></a></li>
 
 </ul>	

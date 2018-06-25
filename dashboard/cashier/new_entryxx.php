@@ -8,7 +8,7 @@ page_protect();
 <html lang="en">
 <head>
 
-    <title>Facturacionweb.site</title>
+    <title>NUEVO USUARIO</title>
     <link rel="stylesheet" href="../../neon/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/animation.css"  id="style-resource-3">
@@ -364,7 +364,7 @@ page_protect();
 			</div>
 
 			<div class="form-group">
-				<label for="field-1" class="col-sm-3 control-label">Inscripcion Fecha :</label>					
+				<label for="field-1" class="col-sm-3 control-label">InscripcionFecha :</label>					
 					<div class="col-sm-5">
 						<input type="text" name="date" id="textfield22" value="<?php echo date('Y-m-d'); ?>">
 					</div>
@@ -438,6 +438,7 @@ page_protect();
 		var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
 		var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2");
     </script>
+        </div>
     </body>
 </html>
 

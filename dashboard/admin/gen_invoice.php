@@ -67,7 +67,7 @@ if (isset($_POST['name'])) {
 }
 ?>
 <!doctype html>
-
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>Recibo</title>
@@ -151,34 +151,39 @@ echo $invoice;
       <address>
         <p>Facturacionweb.site</p>
         <p>3rd flr. JTL bldg. B. S. Tacna, Peru</p>
-        <p>Celular:+51995530374</p><p>www.platea21.com (gorchor@gmail.com)</p><br><p><div id="barcodeTarget" class="barcodeTarget"></div>
-    <canvas id="canvasTarget"></canvas> </span>
+        <p>Celular:+51995530374</p><p>www.platea21.com (gorchor@gmail.com)</p>
+        
+        <p>
+        <div id="barcodeTarget" class="barcodeTarget"></div>
+            
+            
+    <canvas id="canvasTarget"></canvas> 
       </address>
-			<span><img alt="" src="../../img/logo.png">
+            <span><img alt="" src="../../img/logo.png"></span>
 		</header>
 		<article><img alt="" src="pic1.jpg" width="100" height="100">
 			<table class="meta">
 				<tr>
 					<th><span  >Recibo #</span></th>
 					<td><span  ><?php
-echo $invoice;
-?></span></td>
+                    echo $invoice;
+                    ?></span></td>
 				</tr>
 				<tr>
 					<th><span  >Fecha</span></th>
 					<td><span  ><?php
-echo $date;
-?></span></td>
+                echo $date;
+                ?></span></td>
 				</tr>
 				<tr>
 					<th><span  >ID Miembro / Reg ID</span></th>
 
-					<td><?php
-$regid = substr($memid, 6, 10);
-echo $memid . " / " . $regid;
-?></span></td>
-				</tr>
-			</table>	
+					<td><span><?php
+                    $regid = substr($memid, 6, 10);
+                    echo $memid . " / " . $regid;
+                    ?></span></td>
+                    </tr>
+                </table>	
 <table class="meta">
 				<tr>
 					<th><span  >Nombre</span></th>
@@ -194,12 +199,12 @@ echo $age . " / " . $sex;
 				</tr>
 				<tr>
 					<th><span  >Altura / Peso</span></th>
-					<td><?php
-echo $height . " FEET / " . $weight . " Kg";
-?></span></td>
+					<td><span><?php
+                    echo $height . " FEET / " . $weight . " Kg";
+                    ?></span></td>
 				</tr>
 			</table>	
-<table class="inventory">
+                <table class="inventory">
 				<thead>
 					<tr>
 						<th><span  >Tipo Membresia</span></th>
@@ -248,9 +253,15 @@ echo $total - $paid;
 		</article>
     <aside>
       <h1><span  >Notas Adicionales</span></h1>
-      <div  >
-        <p>1). Todos los miembros deben respetar nuestros TNC / normas normalmente de miembros podrán retirarse. </br> </br> 2). El pago no es transferible y no es reembolsable. </br> </br> 3). Comision en caso de presentarse dentro de los 5 días hábiles antes de la expiración sometidos , de lo contrario 100 PHP / día se le cobrará . </br> </br> 4). Todos los usuarios deben vestir apropiadamente O según aconseja. </br> </br> 5). Fumar NO está permitido en el sitio de la gimnasia . </br> </br> 6). Un PHP 1000 para romper / scracthing gafas que pertenecen a " gimnasio de Platea21 " se impondrá .
+      <div>
+          <p>1). Todos los miembros deben respetar nuestros TNC / normas normalmente de miembros podrán retirarse.</p>
+         <p>2). El pago no es transferible y no es reembolsable.</p>
+         <p>3). Comision en caso de presentarse dentro de los 5 días hábiles antes de la expiración sometidos , de lo contrario 100 PHP / día se le cobrará . </p>
+         <p>4). Todos los usuarios deben vestir apropiadamente O según aconseja.</p>
+         <p>5). Fumar NO está permitido en el sitio de la gimnasia. </p>
+         <p>6). Un PHP 1000 para romper / scracthing gafas que pertenecen a " gimnasio de Platea21 " se impondrá.</p>
       </div>
-    </aside><center><br><br><a href="view_mem.php">Facturacionweb.site ( www.platea21.com )</center>
+    </aside>
+    <center><a href="view_mem.php">Facturacionweb.site ( www.platea21.com )</a></center>
   </body>
 </html>

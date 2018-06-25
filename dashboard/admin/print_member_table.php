@@ -14,7 +14,7 @@ if (isset($_POST['name'])) {
 }
 ?>
 <!doctype html>
-
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>Recibo</title>
@@ -116,7 +116,7 @@ echo $date;
 					<th><span  >ID Miembro</span></th>
 					<td><?php
 echo $mem_id;
-?></span></td>
+?></td>
 				</tr>
 			</table>	
 <table class="meta">
@@ -152,6 +152,6 @@ echo $details;
 			
 		</article>
 		<center>
-<a href="table_view.php"><h1>Time Sechdule Print Slip</a></center></font></h1>
+            <a href="table_view.php"><h1>Time Sechdule Print Slip</h1></a></center>
 	</body>
 </html>

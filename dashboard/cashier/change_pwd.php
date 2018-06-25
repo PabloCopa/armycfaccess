@@ -159,7 +159,7 @@ page_protect();
 					
 				</div>
 
-		<h3>Change Password</h3>
+		<h3>Cambiar Contraseña</h3>
 
 		<hr />
 

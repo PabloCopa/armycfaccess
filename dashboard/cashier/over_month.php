@@ -10,93 +10,56 @@ if (isset($_POST['from'])) {
 <html lang="en">
 <head>
 
-    <title>Facturacionweb.site</title>
+    <title>MES</title>
     <link rel="stylesheet" href="../../neon/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
     <link rel="stylesheet" href="../../neon/css/font-icons/entypo/css/animation.css"  id="style-resource-3">
     <link rel="stylesheet" href="../../neon/css/neon.css"  id="style-resource-5">
     <link rel="stylesheet" href="../../neon/css/custom.css"  id="style-resource-6">
 
-    	<!-- Theme framework -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<!-- Bootstrap responsive -->
+	<link rel="stylesheet" href="../../css/bootstrap-responsive.min.css">
+	<!-- jQuery UI -->
+	<link rel="stylesheet" href="../../css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../../css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+	<!-- dataTables -->
+	<link rel="stylesheet" href="../../css/plugins/datatable/TableTools.css">
+	<!-- chosen -->
+	<link rel="stylesheet" href="../../css/plugins/chosen/chosen.css">
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="../../css/style.css">
+	<!-- Color CSS -->
+	<link rel="stylesheet" href="../../css/themes.css">
+
+	<!-- jQuery -->
+	<script src="../../js/jquery.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="../../js/plugins/jquery-ui/jquery.ui.core.min.js"></script>
+	<script src="../../js/plugins/jquery-ui/jquery.ui.widget.min.js"></script>
+	<script src="../../js/plugins/jquery-ui/jquery.ui.mouse.min.js"></script>
+	<script src="../../js/plugins/jquery-ui/jquery.ui.resizable.min.js"></script>
+	<!-- slimScroll -->
+	<script src="../../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="../../js/bootstrap.min.js"></script>
+	<!-- Bootbox -->
+	<script src="../../js/plugins/bootbox/jquery.bootbox.js"></script>
+	<!-- dataTables -->
+	<script src="../../js/plugins/datatable/jquery.dataTables.min.js"></script>
+	<script src="../../js/plugins/datatable/TableTools.min.js"></script>
+	<script src="../../js/plugins/datatable/ColReorder.min.js"></script>
+	<script src="../../js/plugins/datatable/ColVis.min.js"></script>
+	<!-- Chosen -->
+	<script src="../../js/plugins/chosen/chosen.jquery.min.js"></script>
+
+	<!-- Theme framework -->
 	<script src="../../js/eakroko.min.js"></script>
 	<!-- Theme scripts -->
 	<script src="../../js/application.min.js"></script>
 	<!-- Just for demonstration -->
 	<script src="../../js/demonstration.min.js"></script>
-
-    <script src="../../neon/js/jquery-1.10.2.min.js"></script>
-
-	<script src="../../js/plugins/jquery-ui/jquery.ui.core.min.js"></script>
-	<script src="../../js/plugins/jquery-ui/jquery.ui.widget.min.js"></script>
-	<script src="../../js/plugins/jquery-ui/jquery.ui.mouse.min.js"></script>
-	<script src="../../js/plugins/jquery-ui/jquery.ui.resizable.min.js"></script>
-	<script src="../../js/plugins/jquery-ui/jquery.ui.spinner.js"></script>
-	<script src="../../js/plugins/jquery-ui/jquery.ui.slider.js"></script>
-
-
-    <script type="text/javascript">
-		$(document).ready(function()
-		{
-		$(".country").change(function()
-		{
-		var id=$(this).val();
-		var dataString = 'id='+ id;
-
-		$.ajax
-		({
-		type: "POST",
-		url: "ajax_city.php",
-		data: dataString,
-		cache: false,
-		success: function(html)
-		{
-		$(".city").html(html);
-		} 
-		});
-
-		});
-		});
-		    </script>
-		<script type="text/javascript">
-		$(document).ready(function()
-		{
-		$(".country1").change(function()
-		{
-		var id=$(this).val();
-		var dataString = 'id='+ id;
-
-		$.ajax
-		({
-		type: "POST",
-		url: "ajax_city1.php",
-		data: dataString,
-		cache: false,
-		success: function(html)
-		{
-		$(".city1").html(html);
-		} 
-		});
-
-		});
-		});
-    </script>
-
-
-    <SCRIPT LANGUAGE="JavaScript">
-		function checkIt(evt) {
-		    evt = (evt) ? evt : window.event
-		    var charCode = (evt.which) ? evt.which : evt.keyCode
-		    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
-		        status = "This field accepts numbers only."
-		        return false
-		    }
-		    status = ""
-		    return true
-		}
-	</SCRIPT>
-
-	<script type="text/javascript" src="webcam.js"></script>
-
 </head>
     <body class="page-body  page-fade">
 
@@ -170,7 +133,9 @@ if (isset($_POST['from'])) {
 		    $to   = $_POST['to'];
 		?>	
 
-		Miembros de :<?php
+		Miembros de :
+
+		<?php
 		    echo $from;
 		?>   A : <?php
 		    echo $to;
@@ -179,7 +144,8 @@ if (isset($_POST['from'])) {
 		<table class="table table-bordered datatable" id="table-1">
 				<thead>
 					<tr>
-						<th>S.No</th><th>ID Membresia</th>
+						<th>S.No</th>
+						<th>ID Membresia</th>
 						<th>Nombre</th>
 						<th>Edad / Sexo</th>
 						<th>Inscripcion</th>
@@ -214,7 +180,7 @@ if (isset($_POST['from'])) {
 				</tbody>
 			</table>
 							
-			<h4>Usuarios en total en este intervalo de fechas: <?php echo $sno - 1; ?></h4>
+			<h4>Total Members in This Date Range :<?php echo $sno - 1; ?></h4>
 
 			<?php
 				    $from = $_POST['from'];
@@ -230,82 +196,49 @@ if (isset($_POST['from'])) {
 			<table class="table table-bordered datatable" id="table-1">
 				<thead>
 					<tr>
-						<th>S.No</th><th>ID Membresia</th>
+						<th>S.No</th>
+						<th>ID Membresia</th>
 						<th>Nombre</th>
 						<th>Edad / Sexo</th>
 						<th>Inscripcion</th>
 					</tr>
 				</thead>
 				<tbody>
-				<?php   
-				    $query  = "select * from user_data WHERE joining BETWEEN '$from' AND '$to'";
-				    //echo $query;
-				    $result = mysqli_query($con, $query);
-				    $sno    = 1;
-				    
-				    if (mysqli_affected_rows($con) != 0) {
-				        while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-				            
-				            
-				            
-				            echo "<tr><td>" . $sno . "</td>";
-				            echo "<td>" . $row['newid'] . "</td>";
-				            echo "<td>" . $row['name'] . "</td>";
-				            echo "<td>" . $row['age'] . " / " . $row['sex'] . "</td>";
-				            echo "<td>" . $row['joining'] . "</td>";
-				            
-				            $sno++;
-				            
-				        }
-				        
-				        
-				    }
-				    
-				?>									
+					<?php
+					    
+					    
+					    $query  = "select * from subsciption WHERE paid_date BETWEEN '$from' AND '$to'";
+					    //echo $query;
+					    $result = mysqli_query($con, $query);
+					    $sno    = 1;
+					    $total  = 0;
+					    if (mysqli_affected_rows($con) != 0) {
+					        while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+					            
+					            
+					            
+					            echo "<tr><td>" . $sno . "</td>";
+					            echo "<td>" . $row['mem_id'] . "</td>";
+					            echo "<td>" . $row['name'] . "</td>";
+					            echo "<td>" . $row['total'] . " / " . $row['paid'] . "</td>";
+					            echo "<td>" . $row['expiry'] . "</td>";
+					            echo "<td>" . $row['paid_date'] . "</td>";
+					            echo "<td>" . $row['invoice'] . "</td>";
+					            $total = $total + $row['total'];
+					            $sno++;
+					            
+					        }
+					        
+					        
+					    }
+					    
+					?>										
 				</tbody>
 			</table>
 
-			<table class="table table-nomargin dataTable dataTable-tools  table-bordered">
-				<thead>
-					<tr>
-						<th>S.No</th>
-						<th>ID Membresia</th>
-						<th>Nombre</th>
-						<th>Total / Pagado</th>
-						<th>Expiración</th>
-						<th>Fecha de Pago</th><th>Recibo</th>										
-					</tr>
-				</thead>
-				<tbody>
-						<?php
-						    $query  = "select * from subsciption WHERE paid_date BETWEEN '$from' AND '$to'";
-						    //echo $query;
-						    $result = mysqli_query($con, $query);
-						    $sno    = 1;
-						    $total  = 0;
-						    if (mysqli_affected_rows($con) != 0) {
-					        while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {         
-								echo "<tr><td>" . $sno . "</td>";
-								echo "<td>" . $row['mem_id'] . "</td>";
-								echo "<td>" . $row['name'] . "</td>";
-								echo "<td>" . $row['total'] . " / " . $row['paid'] . "</td>";
-								echo "<td>" . $row['expiry'] . "</td>";
-								echo "<td>" . $row['paid_date'] . "</td>";
-								echo "<td>" . $row['invoice'] . "</td>";
-								$total = $total + $row['total'];
-								$sno++;
-								            
-								        }
-								        
-								        
-								    }
-								    
-							?>									
-					</tbody>
-				</table>
-				
-				<h4>Pagos totales en este intervalo de fechas:<?php echo $sno - 1; ?></h4>
-				<h4>Ingresos totales en este intervalo de fechas :<?php echo $total;?></h4>
+						
+				<h4>Total Payments in This Date Range :<?php echo $sno - 1; ?></h4>
+				<h4>Total Income in This Date Range :<?php echo $total;?></h4>
 
 				<?php include('footer.php'); ?>
     	</div>
@@ -340,6 +273,7 @@ var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
 var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
 var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2");
     </script>
+        </div>
     </body>
 </html>
 					

@@ -220,7 +220,7 @@ page_protect();
 					</tbody>
 				</table>
 
-				<h3>Importe total sin pagar: <?php echo $income; ?></h3>
+				<h3>Importe total sin pagar<?php echo $income; ?></h3>
 						
 	<script type="text/javascript">
 	jQuery(document).ready(function($)
@@ -266,5 +266,6 @@ var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
 var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
 var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2");
     </script>
+        </div>
     </body>
 </html>

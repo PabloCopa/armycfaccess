@@ -70,7 +70,7 @@ VALUES ('$memid','$full_name','$mem_type','$date','$total','$paid','$expiry','$i
 }
 ?>
 <!doctype html>
-
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>Recibo</title>
@@ -155,9 +155,9 @@ echo $invoice;
         <p>Facturacionweb.site</p>
         <p>3rd flr. JTL bldg. B. S. Tacna, Peru</p>
         <p>Celular:+51995530374</p><p>www.platea21.com (gorchor@gmail.com)</p><br><p><div id="barcodeTarget" class="barcodeTarget"></div>
-    <canvas id="canvasTarget"></canvas> </span>
+    <canvas id="canvasTarget"></canvas>
       </address>
-			<span><img alt="" src="../../img/logo.png">
+            <span><img alt="" src="../../img/logo.png"></span>
 		</header>
 		<article><img alt="" src="pic1.jpg" width="100" height="100">
 			<table class="meta">
@@ -177,7 +177,7 @@ echo $date;
 					<th><span  >ID Miembro</span></th>
 					<td><?php
 echo $memid;
-?></span></td>
+?></td>
 				</tr>
 			</table>	
 <table class="meta">
@@ -197,7 +197,7 @@ echo $age . " / " . $sex;
 					<th><span  >Altura / Peso</span></th>
 					<td><?php
 echo $height . "  FEET / " . $weight . " Kg";
-?></span></td>
+?></td>
 				</tr>
 			</table>	
 <table class="inventory">
@@ -250,8 +250,13 @@ echo $total - $paid;
     <aside>
       <h1><span  >Notas Adicionales</span></h1>
       <div  >
-        <p>1). Todos los miembros deben respetar nuestros TNC / normas normalmente de miembros podrán retirarse. </br> </br> 2). El pago no es transferible y no es reembolsable. </br> </br> 3). Comision en caso de presentarse dentro de los 5 días hábiles antes de la expiración sometidos , de lo contrario 100 PHP / día se le cobrará . </br> </br> 4). Todos los usuarios deben vestir apropiadamente O según aconseja. </br> </br> 5). Fumar NO está permitido en el sitio de la gimnasia . </br> </br> 6). Un PHP 1000 para romper / scracthing gafas que pertenecen a " gimnasio de Platea21 " se impondrá .
+          <p>1). Todos los miembros deben respetar nuestros TNC / normas normalmente de miembros podrán retirarse.</p> 
+        <p>2). El pago no es transferible y no es reembolsable. </p>
+        <p>3). Comision en caso de presentarse dentro de los 5 días hábiles antes de la expiración sometidos , de lo contrario 100 PHP / día se le cobrará . </p>
+        <p>4). Todos los usuarios deben vestir apropiadamente O según aconseja. </p>
+        <p>5). Fumar NO está permitido en el sitio de la gimnasia . </p>
+        <p>6). Un PHP 1000 para romper / scracthing gafas que pertenecen a " gimnasio de Platea21 " se impondrá .</p>
       </div>
-    </aside><center><br><br><a href="view_mem.php">Facturacionweb.site ( www.platea21.com )</center>
+        </aside><center><a href="view_mem.php">ARMY ACCESS</a></center>
   </body>
 </html>

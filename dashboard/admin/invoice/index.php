@@ -1,7 +1,7 @@
 <?php
 include '../new_p_submit.php';
 ?><!doctype html>
-
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>Recibo</title>
