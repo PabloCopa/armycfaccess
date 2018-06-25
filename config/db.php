@@ -8,7 +8,7 @@ $port='5432';
 
 try{
   //Set DSN data source name
-    $dsn = "pgsql:host=ec2-54-163-229-212.compute-1.amazonaws.com" . $host . ";port=" . $port .";dbname=db1dtmnbmah579" . $dbname . ";user=lwnwsibmeluecn" . $user . ";password=fbd10d0e0bf159244e530cecc56b3260864a4cabbb0a09d0b9ad00dae1b2917f" . $password . ";";
+    $dsn = "pgsql:host=" . $host . ";port=" . $port .";dbname=" . $dbname . ";user=" . $user . ";password=" . $password . ";";
 
 
   //create a pdo instance
