@@ -1,7 +1,7 @@
 <?php
 include "conexion.php";
 
-$user_id=null;
+$id_personas=null;
 $sql1= "select * from personas where id_personas = ".$_GET["id_personas"];
 $query = $con->query($sql1);
 $person = null;

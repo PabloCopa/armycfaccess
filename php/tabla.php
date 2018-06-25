@@ -2,7 +2,7 @@
 
 include "conexion.php";
 
-$user_id=null;
+$id_personas=null;
 $sql1= "select * from personas";
 $query = $con->query($sql1);
 ?>
