@@ -1,0 +1,1 @@
+<footer class="main"> &copy; 2016 <strong>Facturacionweb.site </strong></footer>
