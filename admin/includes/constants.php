@@ -6,11 +6,11 @@ define("INCLUDES", "includes/");
  * Database Constants - these constants are required in order for there to be a 
  * successful connection to the database. Make sure the information is correct.
  */
-define("DB_TYPE", "pgsql");
-define("DB_HOST", "_DB_HOST_");
-define("DB_USER", "_DB_USER_");
-define("DB_PASS", "_DB_PASSWORD_");
-define("DB_NAME", "_DB_NAME_");
+define("DB_TYPE", "PGSQL");
+define("DB_HOST", "pgsql:host=ec2-54-163-229-212.compute-1.amazonaws.com");
+define("DB_USER", "lwnwsibmeluecn");
+define("DB_PASS", "fbd10d0e0bf159244e530cecc56b3260864a4cabbb0a09d0b9ad00dae1b2917f");
+define("DB_NAME", "db1dtmnbmah579");
 
 
 /**
