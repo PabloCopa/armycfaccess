@@ -8,7 +8,7 @@ $port='5432';
 
 try{
   //Set DSN data source name
-    $con = new conex ("pgsql:host=" . $host . ";port=" . $port .";dbname=" . $dbname . ";user=" . $user . ";password=" . $password . ";");
+    $con = new mysqli ("pgsql:host=" . $host . ";port=" . $port .";dbname=" . $dbname . ";user=" . $user . ";password=" . $password . ";");
 
 
   //create a pdo instance
