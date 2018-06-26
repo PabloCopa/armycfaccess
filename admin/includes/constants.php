@@ -6,7 +6,7 @@ define("INCLUDES", "includes/");
  * Database Constants - these constants are required in order for there to be a 
  * successful connection to the database. Make sure the information is correct.
  */
-define("DB_TYPE", "mysql");
+define("DB_TYPE", "pgsql:host");
 define("DB_HOST", "_DB_HOST_");
 define("DB_USER", "_DB_USER_");
 define("DB_PASS", "_DB_PASSWORD_");
