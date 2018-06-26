@@ -1,4 +1,9 @@
 <?php
+ $pdo = new PDO('pgsql:host=ec2-54-163-229-212.compute-1.amazonaws.com'; 'dbname=db1dtmnbmah579', 'lwnwsibmeluecn', 'fbd10d0e0bf159244e530cecc56b3260864a4cabbb0a09d0b9ad00dae1b2917f');
+?>
+
+
+<?php
 
 /*
  * Database.php - The all important database class that connects to the database using PDO
@@ -20,3 +25,24 @@ class Database extends PDO {
     }
 
 }
+?>
+
+
+<?php 
+ class Conexion extends PDO { 
+   private $tipo_de_base = 'pgsql';
+   private $host = 'ec2-54-163-229-212.compute-1.amazonaws.com';
+   private $nombre_de_base = 'lwnwsibmeluecn';
+   private $usuario = 'lwnwsibmeluecn';
+   private $contrasena = 'fbd10d0e0bf159244e530cecc56b3260864a4cabbb0a09d0b9ad00dae1b2917f'; 
+   public function __construct() {
+      //Sobreescribo el método constructor de la clase PDO.
+      try{
+         parent::__construct($this->tipo_de_base.':host='.$this->host.';dbname='.$this->nombre_de_base, $this->usuario, $this->contrasena);
+      }catch(PDOException $e){
+         echo 'Ha surgido un error y no se puede conectar a la base de datos. Detalle: ' . $e->getMessage();
+         exit;
+      }
+   } 
+ } 
+?>
