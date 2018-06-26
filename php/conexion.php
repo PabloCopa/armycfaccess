@@ -8,7 +8,7 @@ $port='5432';
 
 try{
   //Set DSN data source name
-    $con = new mysqli ($host,$port,$dbname,$user,$password);
+    $con = new mysqli ($host,$user,$password,$dbname,$port);
 
 
   //create a pdo instance
