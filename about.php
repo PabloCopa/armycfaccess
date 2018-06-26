@@ -1,6 +1,4 @@
-<?php include ('config/db.php')?>
 <?php include ('config/config.php')?>
-
 <html>
 <head>
   <title>Heroku Test</title>
@@ -29,30 +27,8 @@
       </div>
 </nav>
 
-<login>
-    <div>
-	<center>
-		<form method="POST" action="validar.php">
-			<input type="text" name="nnombre" placeholder="Usuario" />
-			<br />
-			<input type="password" name="npassword" placeholder="Contraseña" />
-			<br />
-			<button type="submit">Inicar Sesion</button>
-		</form>
-	</center>
-</div>
-</login>
-
 <?php
-  //echo 'This is Index Page';
-
-  $sql = 'SELECT * FROM users';
-  $stmt = $pdo->prepare($sql);
-  $stmt->execute();
-  $rowCount = $stmt->rowCount();
-  $details = $stmt->fetch();
-
-  print_r ($details);
+echo 'This is About Page';
 ?>
 
 </body>
