@@ -3,10 +3,8 @@
 include "conexion.php";
 
 $user_id=null;
-$sql = 'select * from person';
-
-#$sql1= "select * from person";
-$query = $con->query($sql);
+$sql1= "select * from person";
+$query = $con->query($sql1);
 ?>
 
 <?php if($query->num_rows>0):?>
