@@ -20,10 +20,10 @@ $pass_key = rtrim($_POST['pass_key']);
 $user_id_auth = stripslashes($user_id_auth);
 $pass_key     = stripslashes($pass_key);
 
-$user_id_auth = mysqli_real_escape_string($con, $user_id_auth);
-$pass_key     = mysqli_real_escape_string($con, $pass_key);
+$user_id_auth = mysqli_real_escape_string($dsn, $user_id_auth);
+$pass_key     = mysqli_real_escape_string($dsn, $pass_key);
 $sql          = "SELECT * FROM auth_user WHERE login_id='$user_id_auth' and pass_key='$pass_key'";
-$result       = mysqli_query($con, $sql);
+$result       = mysqli_query($dsn, $sql);
 $count        = mysqli_num_rows($result);
 if ($count == 1) {
     $row = mysqli_fetch_assoc($result);
