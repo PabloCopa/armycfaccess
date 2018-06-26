@@ -1,0 +1,61 @@
+Version 2.4
+
+[Changes] Allow logon with e-mail address
+[Changes] No longer allowed duplicate email addresses - option removed from admin panel (and database)
+[Changes] Admin Registration Summary page gives better error info on unsuccessful admin registration
+[Updated] admin/summary.php, admin/registration.php - removed duplicate e-mail address option.
+[Updated] In admin/includes folder updated - Functions.php, Adminfunctions.php, adminprocess.php, Configs.php, Login.php, Session.php
+[Updated] Updated Database - removed ALLOW_DUPE_EMAIL column from configuration table
+
+Version 2.3
+
+[Changes] Updated hash algorithm to SHA256 with backward compatibility to SHA1 
+[Updated] admin/configurations.php - Added option to change hash algorithm
+[Updated] admin/adminprocess.php - Updated configEdit function to update hash algorithm in DB
+[Updated] New HASH field in Database - Configurations table.
+[Updated] Updated process.php, Session.php, Registration.php, Login.php, Adminfunctions.php - changed
+sha1() to new hash() function.
+
+Version 2.2.1
+
+[fixed] Could not change user details correctly when 'Allow Duplicate Email' is Off
+[Updated] admin/includes/Adminfunctions.php - Updated adminEditAccount function
+
+Version 2.2.0
+
+[Changes] Added Logging facility
+[Changes] Delete Inactive Users (30 days)
+[added] admin/includes/Logger.php
+[added] admin/includes/logprocess.php
+[fixed] Deleting from administrators group removes user as an admin and vice versa
+[updated] navigation.php / top-navbar.php - added new menu structure
+[updated] Numerous files adding functionality for logging
+[updated] Numerous files cleaned up
+
+Version 2.1.0
+
+[Changes] Added Unique User Home Pages - Pages users are sent to after initial login. This can be set by the admin or individually for each user.
+[added] admin/user-settings.php 
+[updated] admin/adminuseredit.php - Added new tabpanel - line 295
+[updated] admin/navigation.php - Added link for user-settings.php page
+[updated] admin/top-navbar.php - Added link for user-settings.php page
+[updated] admin/includes/Functions.php - Added setIndividualPath function - line 98 
+[updated] admin/includes/adminprocess.php - Added updateUserHomePage & userSettingsEdit functions
+[updated] admin/includes/Configs.php - Added editUserSettings function - line 34
+[updated] admin/includes/process.php - Edited login function to allow unique user page redirection
+
+Version 2.0.3
+
+[updated] Moved email check to Functions.php (emailCheck) so it could be used in both Registration and Account editing
+
+Version 2.0.2
+
+[updated] adminuseredit.php - added code to stop Super Admin from promoting himself or seeing Other Admin Features for own profile.
+
+Version 2.0.1
+
+[fixed] adminprocess.php line 258 change $username_to_promote to $user_to_promote
+[fixed] process.php line 259 - add ..  . "#link-edit-user"); to end of line
+[updated] example/login.js - 114 - add new code for link-edit-user hash
+[updated] example/index.php - added help-block classes under in 'Edit Account' section
+[fixed] registration.php line 118 - remove name='select' causing 'Limit Username Chars' not to work
