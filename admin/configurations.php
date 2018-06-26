@@ -12,7 +12,7 @@ $form = new Form();
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Xavier - PHP Login Script & User Registration</title>
+        <title>ARMY CF ACCESS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -32,12 +32,7 @@ $form = new Form();
             <!-- Side Menu -->
             <nav id="side-menu" class="navbar-default navbar-static-side" role="navigation">
                 <div id="sidebar-collapse">
-                    <div id="logo-element">
-                        <a class="logo" href="index.php">
-                            <span class="x-hidden">X</span><span class="logo-full">avier</span>
-                        </a>
-                    </div>
-                    <?php include('navigation.php'); ?>
+                  <?php include('navigation.php'); ?>
                 </div>
             </nav>
             <!-- END Side Menu -->
@@ -201,9 +196,6 @@ $form = new Form();
                     </div>
                 </div>
                 <!-- END Row -->
-
-                <footer>Copyright &copy; <?php echo date("Y"); ?> <a href="http://www.angry-frog.com" target="_blank">Angry Frog</a> - All rights reserved.</footer>
-
             </div>
             <!-- END Page Content -->
 

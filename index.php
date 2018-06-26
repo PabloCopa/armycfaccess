@@ -5,7 +5,7 @@ $form = new Form;
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Xavier - PHP Login Script & User Registration </title>
+        <title>ARMY CF ACCESS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/ico" href="favicon.ico">
@@ -26,10 +26,6 @@ $form = new Form;
     </head>
 
     <body>
-        <!-- Pen Title-->
-        <div class="pen-title">
-            <h1><i class="oi oi-x"></i>avier</h1><span>PHP Login Script by <a href='http://www.angry-frog.com'>Angry Frog</a></span>
-        </div>
         <!-- Form Module-->
         <div class="module form-module">
             <?php if(!$session->logged_in){ ?>

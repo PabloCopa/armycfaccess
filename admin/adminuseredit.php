@@ -15,7 +15,7 @@ if(!$session->isAdmin() OR !isset($_GET['usertoedit'])){
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Xavier - PHP Login Script & User Registration </title>
+        <title>ARMY CD ACCEESS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -382,8 +382,6 @@ if(!$session->isAdmin() OR !isset($_GET['usertoedit'])){
                         </div>                           
                     </div>
                 </div>
-
-                <footer>Copyright &copy; <?php echo date("Y"); ?> <a href="http://www.angry-frog.com" target="_blank">Angry Frog</a> - All rights reserved.</footer>
 
             </div>
             <!-- END Page Content -->
