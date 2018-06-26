@@ -1,10 +1,4 @@
-
- /*0$pdo = new PDO('pgsql:host=ec2-54-163-229-212.compute-1.amazonaws.com'; 'dbname=db1dtmnbmah579', 'lwnwsibmeluecn', 'fbd10d0e0bf159244e530cecc56b3260864a4cabbb0a09d0b9ad00dae1b2917f');*/
-
-
-
-<?php
-
+<?
 /*
  * Database.php - The all important database class that connects to the database using PDO
  * Last Updated: 15th November, 2014
