@@ -6,7 +6,7 @@ $user_id=null;
 $sql = 'select * from person';
 
 #$sql1= "select * from person";
-$query = $dsn->query($sql);
+$query = $this->$dsn->query($sql);
 ?>
 
 <?php if($query->num_rows>0):?>
