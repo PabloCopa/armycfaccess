@@ -23,7 +23,7 @@ echo 'Connection failed: ' . $e->getMessage();
   ?>
 
 
-
+<h1>Error en la carga de BD</h1>
 
 
 
