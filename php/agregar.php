@@ -6,7 +6,7 @@ if(!empty($_POST)){
 			include "conexion.php";
 			
 			$sql = "insert into person(name,lastname,email,address,phone,created_at) value (\"$_POST[name]\",\"$_POST[lastname]\",\"$_POST[email]\",\"$_POST[address]\",\"$_POST[phone]\",NOW())";
-			$query = $con->query($sql);
+			$query = $dsn->query($sql);
 			if($query!=null){
 				print "<script>alert(\"Agregado exitosamente.\");window.location='../ver.php';</script>";
 			}else{
