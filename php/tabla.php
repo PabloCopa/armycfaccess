@@ -3,8 +3,8 @@
 include "conexion.php";
 
 $user_id=null;
-$psql= "select * from person";
-$query = $con->query($psql);
+$dsn= "select * from person";
+$query = $con->query($dsn);
 ?>
 
 <?php if($query->num_rows>0):?>
