@@ -8,7 +8,7 @@ if(!empty($_POST)){
 			$psql = 'insert into person(name,lastname,email,address,phone,created_at) value (\'$_POST[name]\',\'$_POST[lastname]\',\'$_POST[email]\',\'$_POST[address]\',\'$_POST[phone]\',NOW())';
 			$query = $dsn->query($psql);
 			if($query!=null){
-				print ''<script>alert(\'Agregado exitosamente.\');window.location='../ver.php';</script>';
+				print '<script>alert(\'Agregado exitosamente.\');window.location='../ver.php';</script>';
 			}else{
 				print '<script>alert(\'No se pudo agregar.\');window.location='../ver.php';</script>';
 
