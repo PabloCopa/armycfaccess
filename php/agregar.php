@@ -5,7 +5,7 @@ if(!empty($_POST)){
 		if($_POST['name']!=''&& $_POST['lastname']!=''&&$_POST['address']!=''){
 			include 'conexion.php';
 			
-			$sql = 'insert into person(name,lastname,email,address,phone,created_at) value (\'$_POST[name]\',\'$_POST[lastname]\',\'$_POST[email]\',\'$_POST[address]\',\'$_POST[phone]\',NOW())';
+			$sql = "insert into person (name,lastname,email,address,phone,created_at) value (\'$_POST[name]\',\'$_POST[lastname]\',\'$_POST[email]\',\'$_POST[address]\',\'$_POST[phone]\',NOW())";
 			$query = $dsn->query($sql);
 			if($query!=null){
 				print "<script>alert(\"Agregado exitosamente.\");window.location='../ver.php';</script>";
