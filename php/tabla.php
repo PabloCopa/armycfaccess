@@ -3,7 +3,7 @@
 include "conexion.php";
 
 $sql = 'SELECT * FROM person';
-$stmt = self::conexion->prepare($sql);
+$stmt = self::$conexion->prepare($sql);
 $stmt->execute();
 $rowCount = $stmt->rowCount();
 $details = $stmt->fetch();
