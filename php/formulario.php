@@ -3,7 +3,7 @@ include "conexion.php";
 
 $user_id=null;
 $sql1= "select * from person where id = ".$_GET["id"];
-$query = pg_query($conexion, $sql1);
+$query = pg_query($dbconn, $sql1);
 $person = null;
 if($query->num_rows>0){
 while ($r=$query->fetch_object()){

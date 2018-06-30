@@ -4,7 +4,7 @@ include "conexion.php";
 
 $user_id=null;
 $sql1= "select * from person";
-$query = pg_query($conexion, $sql1);
+$query = pg_query($dbconn, $sql1);
 
 ?>
 
