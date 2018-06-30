@@ -4,7 +4,9 @@ include "conexion.php";
 
 $user_id=null;
 $sql= 'select * from person';
-$query = $conexion->query($sql);
+$stmt=$conexion->prepare($sql);
+$stmt->execute();
+$query=$conexion->query($sql);
 ?>
 
 <?php if($query->num_rows>0):?>
