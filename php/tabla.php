@@ -2,9 +2,15 @@
 
 include "conexion.php";
 
-$user_id=null;
-$query=$conexion->prepare('select * from person');
-$query->excute(query);
+$sql = 'SELECT * FROM person';
+$stmt = $conexion->prepare($sql);
+$stmt->execute();
+$rowCount = $stmt->rowCount();
+$details = $stmt->fetch();
+
+#$user_id=null;
+#$query=$conexion->prepare('select * from person');
+#$query->excute(query);
 
 ?>
 
