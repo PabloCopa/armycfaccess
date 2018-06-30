@@ -4,7 +4,7 @@ include "conexion.php";
 
 $user_id=null;
 $dsn= "select * from person";
-$query = $pdo->query($dsn);
+$query = $conexion->query($dsn);
 ?>
 
 <?php if($query->num_rows>0):?>
