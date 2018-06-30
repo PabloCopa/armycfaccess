@@ -21,27 +21,4 @@ class Conexion{
 		}
 	}
 
-	public static function cerrarConexion(){
-		if (isset(self::$conexion)) {
-			self::$conexion = null;
-		}
-	}
-
-	public static function obtenerConexion(){
-
-		if (isset(self::$conexion)) {
-			echo "Conexion establecida";
-		}
-		else{
-			echo "No se pudo conectar con la base de datos postrgresql";
-		}
-		//return self::$conexion;
-	}
-
-}
-
-Conexion::abrirConexion();
-
-Conexion::obtenerConexion();
-
 ?>

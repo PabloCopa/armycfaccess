@@ -4,7 +4,7 @@ if(!empty($_GET)){
 			include "conexion.php";
 			
 			$sql = "DELETE FROM person WHERE id=".$_GET["id"];
-			$query = $conexion->query($sql);
+			$query = pg_query($conexion, $sql1);
 			if($query!=null){
 				print "<script>alert(\"Eliminado exitosamente.\");window.location='../ver.php';</script>";
 			}else{
