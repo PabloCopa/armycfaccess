@@ -2,15 +2,9 @@
 
 include "conexion.php";
 
-$sql = 'SELECT * FROM person';
-$stmt = self::$conexion->prepare($sql);
-$stmt->execute();
-$rowCount = $stmt->rowCount();
-$details = $stmt->fetch();
-
-#$user_id=null;
-#$query=$conexion->prepare('select * from person');
-#$query->excute(query);
+$user_id=null;
+$sql1= "select * from person";
+$query = pg_query($conexion, $sql1);
 
 ?>
 
