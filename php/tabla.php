@@ -4,6 +4,7 @@ include "conexion.php";
 
 $user_id=null;
 $sql='SELECT * FROM person';
+{echo "Usuarios registrados: $sql <br>"; $sql++;}
 $result = pg_query ($dbconn, $sql );
 $registros= pg_num_rows($result); ?>
 
