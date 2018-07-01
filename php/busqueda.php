@@ -4,10 +4,11 @@ include "conexion.php";
 
 $user_id=null;
 $sql1= "select * from person where name like '%$_GET[s]%' or lastname like '%$_GET[s]%' or address like '%$_GET[s]%' or email like '%$_GET[s]%' or phone like '%$_GET[s]%' ";
-$$query = pg_query($dbconn,$sql1);
+$query = pg_query($dbconn,$sql1);
+$registros= pg_num_rows ($rquery);
 ?>
 
-<?php if($query->num_rows>0):?>
+<?php if($registros->num_rows>0):?>
 <table class="table table-bordered table-hover">
 <thead>
 	<th>Nombre</th>
@@ -17,7 +18,7 @@ $$query = pg_query($dbconn,$sql1);
 	<th>Telefono</th>
 	<th></th>
 </thead>
-<?php while ($r=$query->fetch_array()):?>
+<?php while ($r=pg_fetch_array($registros, null, PGSQL_ASSOC)):?>
 <tr>
 	<td><?php echo $r["name"]; ?></td>
 	<td><?php echo $r["lastname"]; ?></td>
