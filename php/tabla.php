@@ -41,8 +41,8 @@ $registros= pg_num_rows($result); ?>
 	</td>
 </tr>
 <?php endwhile;?>
-</table>
+</table> 
+}
 <?php else:?>
 	<p class="alert alert-warning">No hay resultados</p>
 <?php endif;?>
-}
