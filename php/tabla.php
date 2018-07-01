@@ -40,9 +40,8 @@ $registros= pg_num_rows($result); ?>
 		</script>
 	</td>
 </tr>
-<?php endwhile; }?>
 </table> 
-
+}
 <?php else:?>
 	<p class="alert alert-warning">No hay resultados</p>
 <?php endif;?>
