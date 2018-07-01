@@ -2,11 +2,11 @@
 
 include "conexion.php";
 
-$sql="SELECT * FROM person";
+$sql='SELECT * FROM person';
 $result = pg_query ($dbconn, $sql );
 $registros= pg_num_rows($result); ?>
 
-<?php for ($i=0;$i<$registros;$i++): ?>
+<?php if($registros->num_rows>0):?>
 
 <table class="table table-bordered table-hover">
 <thead>
@@ -17,7 +17,7 @@ $registros= pg_num_rows($result); ?>
 	<th>Telefono</th>
 	<th></th>
 </thead>
-<?php $row = pg_fetch_array ($result,$i )?>
+<?php while ($row=$registros->fetch_array()):?>
 <tr>
 	<td><?php echo $row["name"]; ?></td>
 	<td><?php echo $row["lastname"]; ?></td>
@@ -40,5 +40,8 @@ $registros= pg_num_rows($result); ?>
 		</script>
 	</td>
 </tr>
-</table> 
-
+<?php endwhile;?>
+</table>
+<?php else:?>
+	<p class="alert alert-warning">No hay resultados</p>
+<?php endif;?>
