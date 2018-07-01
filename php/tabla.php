@@ -3,11 +3,11 @@
 include "conexion.php";
 
 $sql="SELECT * FROM person";
-$result = pg_query ($dbconn, $SQL ) or die("Error en la consulta SQL");
+$result = pg_query ($dbconn, $sql ) or die("Error en la consulta SQL");
 $registros= pg_num_rows($result); ?>
 
 <?php for ($i=0;$i<$registros;$i++): ?>
-{
+
 <table class="table table-bordered table-hover">
 <thead>
 	<th>Nombre</th>
@@ -41,4 +41,4 @@ $registros= pg_num_rows($result); ?>
 	</td>
 </tr>
 </table> 
-}
+
