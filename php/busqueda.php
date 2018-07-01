@@ -5,10 +5,10 @@ include "conexion.php";
 $user_id=null;
 $sql1= "select * from person where name like '%$_GET[s]%' or lastname like '%$_GET[s]%' or address like '%$_GET[s]%' or email like '%$_GET[s]%' or phone like '%$_GET[s]%' ";
 $query = pg_query($dbconn,$sql1);
-$registros= pg_num_rows ($rquery);
+$registros= pg_num_rows ($query);
 ?>
 
-<?php if(pg_num_rows($registros)>0):?>
+<?php if(pg_num_rows($query)>0):?>
 <table class="table table-bordered table-hover">
 <thead>
 	<th>Nombre</th>
@@ -18,22 +18,22 @@ $registros= pg_num_rows ($rquery);
 	<th>Telefono</th>
 	<th></th>
 </thead>
-<?php while ($r=pg_fetch_array($registros, null, PGSQL_ASSOC)):?>
+<?php while ($row=pg_fetch_array($query, null, PGSQL_ASSOC)):?>
 <tr>
-	<td><?php echo $r["name"]; ?></td>
-	<td><?php echo $r["lastname"]; ?></td>
-	<td><?php echo $r["email"]; ?></td>
-	<td><?php echo $r["address"]; ?></td>
-	<td><?php echo $r["phone"]; ?></td>
+	<td><?php echo $row["name"]; ?></td>
+	<td><?php echo $row["lastname"]; ?></td>
+	<td><?php echo $row["email"]; ?></td>
+	<td><?php echo $row["address"]; ?></td>
+	<td><?php echo $row["phone"]; ?></td>
 	<td style="width:150px;">
-		<a href="./editar.php?id=<?php echo $r["id"];?>" class="btn btn-sm btn-warning">Editar</a>
-		<a href="#" id="del-<?php echo $r["id"];?>" class="btn btn-sm btn-danger">Eliminar</a>
+		<a href="./editar.php?id=<?php echo $row["id"];?>" class="btn btn-sm btn-warning">Editar</a>
+		<a href="#" id="del-<?php echo $row["id"];?>" class="btn btn-sm btn-danger">Eliminar</a>
 		<script>
-		$("#del-"+<?php echo $r["id"];?>).click(function(e){
+		$("#del-"+<?php echo $row["id"];?>).click(function(e){
 			e.preventDefault();
 			p = confirm("Estas seguro?");
 			if(p){
-				window.location="./php/eliminar.php?id="+<?php echo $r["id"];?>;
+				window.location="./php/eliminar.php?id="+<?php echo $row["id"];?>;
 
 			}
 
