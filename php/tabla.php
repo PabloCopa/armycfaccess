@@ -2,12 +2,12 @@
 
 include "conexion.php";
 
-$sql1= "select * from person";
-$query = pg_query($dbconn, $sql1);
+$sql="SELECT * FROM person";
+$result = pg_query ($dbconn, $SQL ) or die("Error en la consulta SQL");
+$registros= pg_num_rows($result); ?>
 
-?>
-
-<?php if($query->num_rows>0):?>
+<?php for ($i=0;$i<$registros;$i++): ?>
+{
 <table class="table table-bordered table-hover">
 <thead>
 	<th>Nombre</th>
@@ -17,22 +17,22 @@ $query = pg_query($dbconn, $sql1);
 	<th>Telefono</th>
 	<th></th>
 </thead>
-<?php while ($r=$query->fetch_array()):?>
+<?php $row = pg_fetch_array ($result,$i );?>
 <tr>
-	<td><?php echo $r["name"]; ?></td>
-	<td><?php echo $r["lastname"]; ?></td>
-	<td><?php echo $r["email"]; ?></td>
-	<td><?php echo $r["address"]; ?></td>
-	<td><?php echo $r["phone"]; ?></td>
+	<td><?php echo $row["name"]; ?></td>
+	<td><?php echo $row["lastname"]; ?></td>
+	<td><?php echo $row["email"]; ?></td>
+	<td><?php echo $row["address"]; ?></td>
+	<td><?php echo $row["phone"]; ?></td>
 	<td style="width:150px;">
-		<a href="./editar.php?id=<?php echo $r["id"];?>" class="btn btn-sm btn-warning">Editar</a>
-		<a href="#" id="del-<?php echo $r["id"];?>" class="btn btn-sm btn-danger">Eliminar</a>
+		<a href="./editar.php?id=<?php echo $row["id"];?>" class="btn btn-sm btn-warning">Editar</a>
+		<a href="#" id="del-<?php echo $row["id"];?>" class="btn btn-sm btn-danger">Eliminar</a>
 		<script>
-		$("#del-"+<?php echo $r["id"];?>).click(function(e){
+		$("#del-"+<?php echo $row["id"];?>).click(function(e){
 			e.preventDefault();
 			p = confirm("Estas seguro?");
 			if(p){
-				window.location="./php/eliminar.php?id="+<?php echo $r["id"];?>;
+				window.location="./php/eliminar.php?id="+<?php echo $row["id"];?>;
 
 			}
 
@@ -45,3 +45,4 @@ $query = pg_query($dbconn, $sql1);
 <?php else:?>
 	<p class="alert alert-warning">No hay resultados</p>
 <?php endif;?>
+}
