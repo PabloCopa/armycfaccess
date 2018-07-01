@@ -8,7 +8,7 @@ $query = pg_query($dbconn,$sql1);
 $registros= pg_num_rows ($rquery);
 ?>
 
-<?php if($registros->num_rows>0):?>
+<?php if(pg_num_rows($registros)>0):?>
 <table class="table table-bordered table-hover">
 <thead>
 	<th>Nombre</th>
