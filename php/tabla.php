@@ -5,8 +5,8 @@ include "conexion.php";
 $user_id=null;
 $sql='SELECT * FROM person';
 $result = pg_query ($dbconn, $sql );
-$registros= pg_num_rows($result);
-<?php if($registros->num_rows>0):?>
+$registros= pg_num_rows($result); ?>
+<?php if($registros->num_rows>0): ?>
 
 <table class="table table-bordered table-hover">
 <thead>
