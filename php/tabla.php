@@ -6,7 +6,6 @@ $user_id=null;
 $sql='SELECT * FROM person';
 $result = pg_query ($dbconn, $sql );
 $registros= pg_num_rows($result);
-{echo "Usuarios registrados: $result <br>"; $result++;}  ?>
 <?php if($registros->num_rows>0):?>
 
 <table class="table table-bordered table-hover">
@@ -18,7 +17,7 @@ $registros= pg_num_rows($result);
 	<th>Telefono</th>
 	<th></th>
 </thead>
-<?php while ($row=$registros->pg_fetch_array()):?>
+<?php while ($row=pg_fetch_array($registros)):?>
 <tr>
 	<td><?php echo $row["name"]; ?></td>
 	<td><?php echo $row["lastname"]; ?></td>
