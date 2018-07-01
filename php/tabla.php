@@ -17,7 +17,7 @@ $registros= pg_num_rows($result); ?>
 	<th>Telefono</th>
 	<th></th>
 </thead>
-<?php $row = pg_fetch_array ($result,$i );?>
+<?php $row = pg_fetch_array ($result,$i ):?>
 <tr>
 	<td><?php echo $row["name"]; ?></td>
 	<td><?php echo $row["lastname"]; ?></td>
