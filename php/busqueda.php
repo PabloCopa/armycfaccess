@@ -9,8 +9,8 @@ $registros= pg_num_rows ($query);
 ?>
 
 <?php if(pg_num_rows($query)>0):?>
-<table class="table table-bordered table-hover">
-<thead>
+<table class="table table-bordered" style="background-color: #dad6d673;">
+<thead style="color: black;">
 	<th>Nombre</th>
 	<th>Apellido</th>
 	<th>Email</th>
