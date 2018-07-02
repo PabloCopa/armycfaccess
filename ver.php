@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>.: CRUD :.</title>
+		<title>.: ARMY CF ACCESS :.</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 		<script src="js/jquery.min.js"></script>
 		<link rel="stylesheet" href="css/style-ver.css">
@@ -23,30 +23,30 @@
           <h4 class="modal-title">Agregar</h4>
         </div>
         <div class="modal-body">
-<form role="form" method="post" action="php/agregar.php">
-  <div class="form-group">
-    <label for="name">Nombre</label>
-    <input type="text" class="form-control" name="name" required>
-  </div>
-  <div class="form-group">
-    <label for="lastname">Apellido</label>
-    <input type="text" class="form-control" name="lastname" required>
-  </div>
-  <div class="form-group">
-    <label for="address">Domicilio</label>
-    <input type="text" class="form-control" name="address" required>
-  </div>
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" class="form-control" name="email" >
-  </div>
-  <div class="form-group">
-    <label for="phone">Telefono</label>
-    <input type="text" class="form-control" name="phone" >
-  </div>
+            <form role="form" method="post" action="php/agregar.php">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="lastname">Apellido</label>
+                <input type="text" class="form-control" name="lastname" required>
+              </div>
+              <div class="form-group">
+                <label for="address">Domicilio</label>
+                <input type="text" class="form-control" name="address" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" >
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefono</label>
+                <input type="text" class="form-control" name="phone" >
+              </div>
 
-  <button type="submit" class="btn btn-default">Agregar</button>
-</form>
+              <button type="submit" class="btn btn-default">Agregar</button>
+            </form>
         </div>
 
       </div><!-- /.modal-content -->

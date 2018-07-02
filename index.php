@@ -3,7 +3,7 @@ session_start();
 ?>
 <html>
 	<head>
-		<title>.: ARMY CF ACCESS:.</title>
+		<title>.: ARMY CF ACCESS :.</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style-index.css">
 	</head>

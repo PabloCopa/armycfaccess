@@ -6,3 +6,10 @@ body{
 	background-size:  cover;
 	
 }
+h2{
+    color: white;
+    
+}
+form label{
+    color: white;
+}
