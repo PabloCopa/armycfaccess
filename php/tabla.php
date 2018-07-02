@@ -1,3 +1,4 @@
+<? link href="css/style-tabla.css" ?>
 <?php
 
 include "conexion.php";
