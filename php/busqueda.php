@@ -19,7 +19,7 @@ $registros= pg_num_rows ($query);
 	<th></th>
 </thead>
 <?php while ($row=pg_fetch_array($query, null, PGSQL_ASSOC)):?>
-<tr>
+<tr style="color:black;">
 	<td><?php echo $row["name"]; ?></td>
 	<td><?php echo $row["lastname"]; ?></td>
 	<td><?php echo $row["email"]; ?></td>

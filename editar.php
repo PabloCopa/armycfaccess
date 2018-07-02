@@ -1,9 +1,10 @@
 
 <html>
 	<head>
-		<title>.: CRUD :.</title>
+		<title>.: ARMY CF ACCESS :.</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 		<script src="js/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/style-editar.css">
 	</head>
 	<body>
 	<?php include "php/navbar.php"; ?>
