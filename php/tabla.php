@@ -2,7 +2,7 @@
 include "conexion.php";
 
 $user_id=null;
-$sql='SELECT * FROM person';
+$sql='SELECT * FROM person order by id';
 $result = pg_query ($dbconn, $sql );
 $registros= pg_num_rows($result); ?>
 
