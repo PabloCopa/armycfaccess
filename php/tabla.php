@@ -8,17 +8,17 @@ $registros= pg_num_rows($result); ?>
 
 <?php if(pg_num_rows($result)>0): ?>
 
-<table class="table table-bordered table-hover">
-<thead style="color: white;">
-	<th>Nombre</th>
-	<th>Apellido</th>
-	<th>Email</th>
-	<th>Direccion</th>
-	<th>Telefono</th>
-	<th></th>
-</thead>
+<table class="table table-bordered">
+        <thead style="color: white;">
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+            <th></th>
+        </thead>
 <?php while ($row=pg_fetch_array($result, null, PGSQL_ASSOC)):?>
-<tr>
+<tr style="color:white;">
 	<td><?php echo $row["name"]; ?></td>
 	<td><?php echo $row["lastname"]; ?></td>
 	<td><?php echo $row["email"]; ?></td>
