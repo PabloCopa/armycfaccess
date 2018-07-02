@@ -9,7 +9,7 @@ $registros= pg_num_rows($result); ?>
 <?php if(pg_num_rows($result)>0): ?>
 
 <table class="table table-bordered table-hover">
-<thead>
+<thead style="color: white;">
 	<th>Nombre</th>
 	<th>Apellido</th>
 	<th>Email</th>
