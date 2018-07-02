@@ -20,23 +20,23 @@ while ($row= pg_fetch_object($query)){
 
 <form role="form" method="post" action="php/actualizar.php">
   <div class="form-group">
-    <label for="name">Nombre</label>
+    <label for="name" style="color:white;">Nombre</label>
     <input type="text" class="form-control" value="<?php echo $person->name; ?>" name="name" required>
   </div>
   <div class="form-group">
-    <label for="lastname">Apellido</label>
+    <label for="lastname" style="color:white;">Apellido</label>
     <input type="text" class="form-control" value="<?php echo $person->lastname; ?>" name="lastname" required>
   </div>
   <div class="form-group">
-    <label for="address">Domicilio</label>
+    <label for="address" style="color:white;">Domicilio</label>
     <input type="text" class="form-control" value="<?php echo $person->address; ?>" name="address" required>
   </div>
   <div class="form-group">
-    <label for="email">Email</label>
+    <label for="email" style="color:white;">Email</label>
     <input type="email" class="form-control" value="<?php echo $person->email; ?>" name="email" >
   </div>
   <div class="form-group">
-    <label for="phone">Telefono</label>
+    <label for="phone" style="color:white;">Telefono</label>
     <input type="text" class="form-control" value="<?php echo $person->phone; ?>" name="phone" >
   </div>
 <input type="hidden" name="id" value="<?php echo $person->id; ?>">
