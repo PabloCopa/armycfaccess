@@ -7,7 +7,7 @@
 	</head>
 <body>
 	<?php include "php/navbar.php"; ?>
-<div class="container">
+<div class="container d-flex align-items-center">
     <div class="row">
         <div class="col-md-6">
         <h2>EDITAR</h2>
