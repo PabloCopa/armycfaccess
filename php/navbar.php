@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default" role="navigation" style="background-color: #dad6d673;">
 <div class="container">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
@@ -8,13 +8,13 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="./"><b>ARMY CF ACCESS</b></a>
+    <a class="navbar-brand" href="./"><b style="color: black;">ARMY CF ACCESS</b></a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li><a href="./ver.php">VER</a></li>
+      <li><a href="./ver.php" style="color: black;">VER</a></li>
     </ul>
 <form class="navbar-form navbar-left" role="search" action="./buscar.php">
       <div class="form-group">

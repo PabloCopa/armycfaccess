@@ -17,6 +17,7 @@ $registros= pg_num_rows($result); ?>
             <th>Direccion</th>
             <th>Telefono</th>
             <th>Creado</th>
+            <th></th>
         </thead>
 <?php while ($row=pg_fetch_array($result, null, PGSQL_ASSOC)):?>
 <tr style="color:black;">

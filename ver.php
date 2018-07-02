@@ -26,23 +26,23 @@
             <form role="form" method="post" action="php/agregar.php">
               <div class="form-group">
                 <label for="name">Nombre</label>
-                <input type="text" class="form-control" placeholder="Box&Gym" name="name" data-error="Ingrese Nombre" required>
+                <input type="text" class="form-control" placeholder="Box&Gym" name="name" data-error="Ingrese Nombre" required="required">
               </div>
               <div class="form-group">
                 <label for="lastname">Apellido</label>
-                <input type="text" class="form-control" placeholder="Army" name="lastname" data-error="Ingrese Apellido" required>
+                <input type="text" class="form-control" placeholder="Army" name="lastname" data-error="Ingrese Apellido" required="required">
               </div>
               <div class="form-group">
                 <label for="address">Domicilio</label>
-                <input type="text" class="form-control" placeholder="Castelli 266" name="address" data-error="Ingrese Dirección" required>
+                <input type="text" class="form-control" placeholder="Castelli 266" name="address" data-error="Ingrese Dirección" required="required">
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" placeholder="army@boxgym.com" name="email" data-error="Ingrese Email valido." required>
+                <input type="email" class="form-control" placeholder="army@boxgym.com" name="email" data-error="Ingrese Email valido." required="required">
               </div>
               <div class="form-group">
                 <label for="phone">Telefono</label>
-                <input type="text" class="form-control" placeholder="12345678" name="phone" required>
+                <input type="text" class="form-control" placeholder="12345678" name="phone" required="required">
               </div>
 
               <button type="submit" class="btn btn-default">Agregar</button>
