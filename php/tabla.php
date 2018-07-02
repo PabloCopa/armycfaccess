@@ -1,6 +1,6 @@
-<? link href="css/style-tabla.css" ?>
 <?php
 
+<link rel="stylesheet" href="../css/style-tabla.css">
 include "conexion.php";
 
 $user_id=null;
