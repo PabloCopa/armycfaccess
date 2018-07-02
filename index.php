@@ -5,6 +5,7 @@ session_start();
 	<head>
 		<title>.: ARMY CF ACCESS:.</title>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style-index.css">
 	</head>
 	<body>
 	<?php include "php/navbar.php"; ?>
