@@ -10,20 +10,23 @@ $registros= pg_num_rows($result); ?>
 
 <table class="table table-bordered" style="background-color: #dad6d673;">
         <thead style="color: black;">
+            <th>Nº Id</th>
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Email</th>
             <th>Direccion</th>
             <th>Telefono</th>
-            <th></th>
+            <th>Creado</th>
         </thead>
 <?php while ($row=pg_fetch_array($result, null, PGSQL_ASSOC)):?>
 <tr style="color:black;">
+    <td><?php echo $row["id"]; ?></td>
 	<td><?php echo $row["name"]; ?></td>
 	<td><?php echo $row["lastname"]; ?></td>
 	<td><?php echo $row["email"]; ?></td>
 	<td><?php echo $row["address"]; ?></td>
 	<td><?php echo $row["phone"]; ?></td>
+	<td><?php echo $row["created_at"]; ?></td>
 	<td style="width:150px;">
 		<a href="./editar.php?id=<?php echo $row["id"];?>" class="btn btn-sm btn-warning">Editar</a>
 		<a href="#" id="del-<?php echo $row["id"];?>" class="btn btn-sm btn-danger">Eliminar</a>
