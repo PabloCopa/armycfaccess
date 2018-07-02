@@ -8,8 +8,8 @@ $registros= pg_num_rows($result); ?>
 
 <?php if(pg_num_rows($result)>0): ?>
 
-<table class="table table-bordered">
-        <thead style="color: white;">
+<table class="table table-bordered" style="background-color: #dad6d673;">
+        <thead style="color: black;">
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Email</th>
@@ -18,7 +18,7 @@ $registros= pg_num_rows($result); ?>
             <th></th>
         </thead>
 <?php while ($row=pg_fetch_array($result, null, PGSQL_ASSOC)):?>
-<tr style="color:white;">
+<tr style="color:black;">
 	<td><?php echo $row["name"]; ?></td>
 	<td><?php echo $row["lastname"]; ?></td>
 	<td><?php echo $row["email"]; ?></td>
